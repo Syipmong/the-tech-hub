@@ -1,7 +1,7 @@
 import React from 'react'
 import CustomBtn from './CustomBtn'
-import logo from '../logo.svg'
-import logoMobile from '../logoMobile.svg'
+import logo from '../logo.png'
+import logoMobile from '../logo.png'
 import { makeStyles, Toolbar, Typography } from '@material-ui/core'
 
 
@@ -58,7 +58,7 @@ function NavBar() {
         <Typography variant="h6" className={classes.menuItem}>
             Contact Us 
         </Typography>
-        <CustomBtn txt="Trial Our Product"/>
+        <CustomBtn txt="Join Us"/>
     </Toolbar>
     )
 }

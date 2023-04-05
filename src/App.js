@@ -1,5 +1,5 @@
 import './App.css';
-import { createTheme, ThemeProvider, makeStyles} from '@material-ui/core';
+import { createTheme, ThemeProvider, makeStyles, Typography} from '@material-ui/core';
 
 import NavBar from './components/NavBar';
 import Grid from './components/Grid';
@@ -36,7 +36,27 @@ const theme = createTheme(
       }
     }
   }
-)
+);
+
+const styles = makeStyles({
+  wrapper: {
+    width: "65%",
+    margin: "auto",
+    textAlign: "center"
+  },
+  bigSpace: {
+    marginTop: "5rem"
+  },
+  littleSpace:{
+    marginTop: "2.5rem",
+  },
+  grid:{
+    display: "flex", 
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap", 
+  },
+})
 
 function App() {
   const classes = styles();
@@ -46,10 +66,10 @@ function App() {
         <NavBar/>
         <div className={classes.wrapper}>
           <Typography variant="h4" className={classes.bigSpace} color="primary">
-             At Rocket.io we are passionate about software
+          Empowering businesses with cutting-edge technology solutions
           </Typography>
           <Typography variant="h5" className={classes.littleSpace} color="primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales congue tristique. Cras non pretium sem. Duis interdum lorem sit amet ligula pretium, sed rutrum urna semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus egestas gravida ullamcorper.
+          Welcome to The Tech Hub, a community of technology enthusiasts, programmers, and networkers! Our page is dedicated to all things tech-related, from the latest programming languages to cutting-edge hardware and software solutions. We provide a platform for professionals to connect, collaborate, and share their knowledge and experiences in the tech industry. Join our community to stay up-to-date on industry news and trends, network with like-minded professionals, and enhance your skills and expertise.
           </Typography>
         </div>
         <div className={`${classes.grid} ${classes.bigSpace}`}>
