@@ -10,6 +10,10 @@ import EventNoteIcon from '@material-ui/icons/EventNote'
 import TrendingUpIcon from '@material-ui/icons/TrendingUp'
 import ImportExportIcon from '@material-ui/icons/ImportExport'
 import HttpIcon from '@material-ui/icons/Http'
+
+import Blog from './components/blog';
+
+
 const theme = createTheme(
   {
     palette: {
@@ -83,7 +87,9 @@ function App() {
           <Grid icon={<HttpIcon style={{fill: "#2EA09D", height:"125", width:"125"}}/>} title="Connected" btnTitle="Show me More"/>
         </div>
         <div className={classes.bigSpace}>
+          <Blog/>
           <Footer/>
+
         </div>
       </ThemeProvider>
     </div>
